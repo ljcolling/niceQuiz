@@ -4,6 +4,8 @@
 # niceQuiz: learnR style quizzes in plain javascript
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/ljcolling/niceQuiz/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ljcolling/niceQuiz/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 `niceQuiz` allows you to generate `learnR` style multi-choice quizzes in
