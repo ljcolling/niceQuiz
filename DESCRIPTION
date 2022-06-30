@@ -21,4 +21,5 @@ Authors@R:
 Imports: 
     htmlwidgets,
     markdown
-URL: http://git.colling.net.nz/niceQuiz/
+URL: https://github.com/ljcolling/niceQuiz
+BugReports: https://github.com/ljcolling/niceQuiz/issues
