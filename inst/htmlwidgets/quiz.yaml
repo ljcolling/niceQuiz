@@ -1,0 +1,8 @@
+dependencies:
+ - name: niceQuiz
+   version: 0.0.1
+   src: htmlwidgets/lib
+   script: 
+     - lib.js
+   stylesheet: 
+     - styles.css  

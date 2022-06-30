@@ -1,0 +1,46 @@
+---
+title: "Basic usage"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Basic usage}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+library(niceQuiz)
+```
+
+
+Below is an example of a rendered quiz
+
+```{r}
+quiz(
+  caption = "Some random questions",
+  question(
+    "What is the collective term for Windows, MacOS, Unix, *etc.*?",
+    answer("Operating system", correct = TRUE),
+    answer("Graphical user interface"),
+    answer("Integrated development environment"),
+    answer("Secondary computing software")
+  ),
+  question(
+    "What is R?",
+    answer("A high-level programming language", correct = TRUE),
+    answer("An IDE for Windows and MacOS"),
+    answer("Machine code for RStudio"),
+    answer("Baby don't hurt me.")
+  ),
+  question(
+    "How many panes does RStudio contain?",
+    answer("1"),
+    answer("2"),
+    answer("3"),
+    answer("4", correct = TRUE)
+  )
+)
+```
