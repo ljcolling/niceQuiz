@@ -4,7 +4,7 @@
 \alias{question}
 \title{question}
 \usage{
-question(text, ...)
+question(text, ..., type = "standard")
 }
 \arguments{
 \item{text}{the text do be displayed for the question}
