@@ -90,6 +90,13 @@ answer <- function(text, correct = FALSE) {
   c(renderMarkdown(text = text), ifelse(correct, "true", "false"))
 }
 
+
+#' @export
+numericanswer <- function(text, tol = 0.5) {
+  c(renderMarkdown(text = as.character(text)), tol)
+}
+
+
 #' question
 #'
 #' @details Construct a question
@@ -104,6 +111,6 @@ answer <- function(text, correct = FALSE) {
 #'   answer("response")
 #' )
 #' @export
-question <- function(text, ...) {
-  list(question = renderMarkdown(text = text), answers = list(...))
+question <- function(text, ..., type = "standard") {
+  list(question = renderMarkdown(text = text), answers = list(...), type = type)
 }
